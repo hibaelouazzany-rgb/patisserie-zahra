@@ -2,37 +2,125 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pâtisserie Zahra</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Navbar */
+header {
+  background: #ff4d6d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8d7da;
+}
+
+.hero button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Section */
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Pâtisserie Zahra 🍰</h1>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="products.html">Produits</a>
-        <a href="order.html">Panier</a>
-    </nav>
+  <h1>Pâtisserie Zahra 🍰</h1>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Produits</a>
+    <a href="#">Panier</a>
+  </nav>
 </header>
 
 <section class="hero">
-    <h2>Bienvenue chez Zahra</h2>
-    <p>Produits frais - Livraison rapide 🚚</p>
-    <a href="products.html" class="btn">Voir Produits</a>
+  <h2>Bienvenue chez Zahra</h2>
+  <p>Produits frais - Livraison rapide 🚚</p>
+  <button>Voir Produits</button>
+</section>
+
+<section class="section">
+  <h2>Notre Pâtisserie 🏪</h2>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c2dce1b">
+    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8">
+  </div>
+
+  <p>Située à Lazzaret - Oujda</p>
 </section>
 
 <footer>
-    <p>© 2026 Pâtisserie Zahra</p>
+  <p>© 2026 Pâtisserie Zahra</p>
 </footer>
-<section style="text-align:center; padding:30px;">
-<h2>Notre Pâtisserie 🏪</h2>
 
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600" width="300">
-<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600" width="300">
-
-<p>Située à Lazzaret - Oujda</p>
-</section>
 </body>
 </html>
